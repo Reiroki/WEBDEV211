@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/tos-icon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="Date.js"></script>
+    <title>Home | Webdev211</title>
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #000000;
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px #000000;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #000000;
+        box-shadow: inset 0 0 10px #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="webdevmargin">
+      <div id="webdevsite">
+        <div class="top-menu">
+          <ul>
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="register.html">Register</a>
+            </li>
+            <li>
+              <a href="#">Community</a>
+              <ul>
+                <li>
+                  <a href="" target="_blank">Youtube</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Facebook</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="webdevshow">
+          <div id="links">
+            <ul>
+              <li id="status-off" class="game-status" style="">
+                <div class="sidebar_server_time">
+                  <div class="sidebar_link" style="float:left;color:#000000;font-size: 15px;text-transform: uppercase;font-family: Marker Felt, fantasy;color;">Server Time</div>
+                  <div class="sidebar_time" style="float:left;>
+												<li class=" server-time"="">
+                    <a id="time"></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="home.html">
+          <div id="logo"></div>
+        </a>
+        <div id="webdevside_panel">
+          <aside class="left-sidebar border-top">
+            <div class="border side-acpanel">
+              <div class="sidebar-title"> Account Panel </div>
+              <form method="POST">
+                <div id="login-form">
+                  <section class="webdesigntuts-workshop">
+                    <div class="sidebar_login1">
+                      <input type="text" name="login" id="login" placeholder="Username">
+                      <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                  </section>
+                  <div id="button_login">
+                    <input style="border-radius: 4px;" type="submit" name="do-login" id="do-login" value="Login" class="button" />
+                    <span id="login-status"></span>
+                  </div>
+                  <div class="button_login" style="padding-left:85px;padding-top:5px;">
+                    <div>
+                      <a>
+                        <font color="orange" font-size="13px">Forgot Password ? </font>
+                      </a>
+                    </div>
+                    <div style="padding-left:25px;padding-top:5px;font-size:13px;">
+                      <font class="guild_link">
+                        <a href="">Click Here !</a>
+                      </font>
+                    </div>
+                    <span id="login-status"></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="best-p-block border">
+              <div class="sidebar-title"> DEVELOPER </div>
+              <div class="guild-info" style="height: 140px;">
+                <div>
+                  <a>
+                    <font color="yellow">MEMBERS : </font>
+                    <font class="guild_link">
+                      <a href="" target="_blank"></a>
+                    </font>
+                  </a>
+                </div>
+                <br>
+                <div>
+                  <a>
+                    <font color="yellow">Section : </font>
+                    <font class="guild_link">
+                      <a href="" target="_blank">BSIT 2-Y1-5</a>
+                    </font>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div id="webdevcontent">
+          <div id="registerwebdev1">
+            <div id="registerwebdev1">
+              <div id="webdevnews_home">
+                <div id="webdevnews_headline">
+                  <p class="fat" style="font-family: Marker Felt, fantasy;color:#b5714a;">Register Account</p>
+                </div>
+                <ul class="lcp_catlist">
+                  <li class="current">
+                    <div class="btn-container">
+                      <form method="POST">
+                        <input type="hidden" name="token" value="064f3920c16ada5108a35c4a7b6c5216582627e7">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td style="font-family:Marker Felt, fantasy;color:white;padding-left:131px;">Full Name : <input type="text" name="full_name" id="full_name" placeholder="Full Name">
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:130px;">Birth Date : <input type="number" name="birth_date" id="birth_date" max="12312020" placeholder="MMDDYYYY">
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:94px;">Mobile Number : <input type="number" name="mobile_number" id="mobile_number" placeholder="Mobile Number">
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:153px;">Gender : <select dir="ltl" name="nationality" id="nationality" style="font-size:15px;font-weight: 400;padding-left:5px;background:#151215;border: 1px solid #291d1f;color: #623105;width:195px;height:38px;">
+                                  <option value="">Select Gender</option>
+                                  <option value="Male">Male</option>
+                                  <option value="Female">Female</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:126px;">User Name : <input type="text" name="account" id="account" placeholder="User Name">
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:100px;">User Password : <input type="password" name="pass" id="pass" placeholder="Password">
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:36px;">Confirm User Password : <input type="password" name="cpass" id="cpass" placeholder="Confirm Password">
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:105px;">Email Address : <input type="email" name="email" id="email" placeholder="Email Address">
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:78px;">Security Question : <select dir="ltl" class="" style="font-size:15px;font-weight: 400;px;padding-left:5px;background:#151215;border: 1px solid #291d1f;color: #623105;width:195px;height:38px;" name="sq" id="sq">
+                                  <option value="">Security Question</option>
+                                  <option value="Where do you live?">Where do you live?</option>
+                                  <option value="What is your favorite pet?">What is your favorite pet?</option>
+                                  <option value="What pet do you have?">What pet do you have?</option>
+                                  <option value="What pet do you have?">What is your first pet?</option>
+                                  <option value="How old is your father?">How old is your father?</option>
+                                </select>
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-family: Marker Felt, fantasy;color:white;padding-left:90px;">Security Answer : <input type="text" name="sa" id="sa" placeholder="Security Answer">
+                                <span class="status"></span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="button_register">
+                          <input type="submit" name="register" class="button" value="Register">
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="bottom_margin">
+            <div id="webdevbottom">
+              <footer class="footer">
+                <div class="block-top">
+                  <div onclick="topFunction()" id="toTop" style="display: block;"></div>
+                </div>
+              </footer>
+              <div class="copyright copy">Copyright 2023-2024© <a href="">WBDV211</a>
+                <br>All Rights Reserved</br>
+              </div>
+            </div>
+  </body>
+</html>

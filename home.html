@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/tos-icon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="Date.js"></script>
+    <title>Home | Webdev211</title>
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #000000;
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px #000000;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #000000;
+        box-shadow: inset 0 0 10px #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="webdevmargin">
+      <div id="webdevsite">
+        <div class="top-menu">
+          <ul>
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="register.html">Register</a>
+            </li>
+            <li>
+              <a href="#">Community</a>
+              <ul>
+                <li>
+                  <a href="" target="_blank">Youtube</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Facebook</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="webdevshow">
+          <div id="links">
+            <ul>
+              <li id="status-off" class="game-status" style="">
+                <div class="sidebar_server_time">
+                  <div class="sidebar_link" style="float:left;color:#000000;font-size: 15px;text-transform: uppercase;font-family: Marker Felt, fantasy;color;">Server Time</div>
+                  <div class="sidebar_time" style="float:left;color:#000000;font-family: Marker Felt, fantasy;color;>
+												<li class=" server-time"="">
+                    <a id="time"></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="home.html">
+          <div id="logo"></div>
+        </a>
+        <div id="webdevside_panel">
+          <aside class="left-sidebar border-top">
+            <div class="border side-acpanel">
+              <div class="sidebar-title">
+                <div>
+                  <a>
+                    <font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;font color="white" font-size="20px">Account Panel
+                  </a>
+                  </font>
+                </div>
+              </div>
+              <form method="POST">
+                <div id="login-form">
+                  <section class="webdesigntuts-workshop">
+                    <div class="sidebar_login1">
+                      <input type="text" name="login" id="login" placeholder="Username">
+                      <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                  </section>
+                  <div id="button_login">
+                    <input style="border-radius: 4px;" type="submit" name="do-login" id="do-login" value="Login" class="button" />
+                    <span id="login-status"></span>
+                  </div>
+                  <div class="button_login" style="padding-left:85px;padding-top:5px;">
+                    <div>
+                      <a>
+                        <font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;>Forgot Password ?
+                      </a>
+                    </div>
+                    <div style="padding-left:25px;padding-top:5px;font-size:13px;">
+                      <font class="guild_link">
+                        <a href="">
+                          <a>
+                            <font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;>Click Here !
+                          </a>
+                      </font>
+                    </div>
+                    <span id="login-status"></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="best-p-block border">
+              <div class="sidebar-title"> DEVELOPER </div>
+              <div class="guild-info" style="height: 140px;">
+                <div>
+                  <a>
+                    <font color="yellow">MEMBERS : </font>
+                    <font class="guild_link">
+                      <a href="" target="_blank"></a>
+                    </font>
+                  </a>
+                </div>
+                <br>
+                <div>
+                  <a>
+                    <font color="yellow">Section : </font>
+                    <font class="guild_link">
+                      <a href="" target="_blank">BSIT 2-Y1-5</a>
+                    </font>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div id="webdevcontent">
+          <div id="registerwebdev1">
+            <div id="webdevnews_home">
+              <div id="webdevnews_headline">
+                <p class="fat" style="font-family: Marker Felt, fantasy;color:#b5714a;">Parking Rules</p>
+              </div>
+              <table>
+                <tbody>
+                  <td style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;color:white;padding-left:30px;">1. Park only in designated spaces, respecting marked boundaries and ensuring your vehicle doesn't obstruct others. <span class="status"></span>
+                  </td>
+                  </tr>
+                  <td style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;color:white;padding-left:30px;">2. Always adhere to posted time limits; avoid overstaying in time-restricted parking zones. <span class="status"></span>
+                  </td>
+                  </tr>
+                  <td style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;color:white;padding-left:30px;">3. Obey handicap parking regulations; these spaces are reserved for those with valid permits. <span class="status"></span>
+                  </td>
+                  </tr>
+                  <td style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;color:white;padding-left:30px;">4. No double parking - use only one designated space per vehicle. <span class="status"></span>
+                  </td>
+                  </tr>
+                  <td style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;color:white;padding-left:30px;">5. Keep pedestrian walkways and crosswalks clear; never park in these areas. <span class="status"></span>
+                  </td>
+                  </tr>
+                  <td style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;color:white;padding-left:30px;">6. Utilize our dedicated social media platform to check real-time availability and updates on parking spaces before heading to the location. <span class="status"></span>
+                  </td>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_margin">
+          <div id="webdevbottom">
+            <footer class="footer">
+              <div class="block-top">
+                <div onclick="topFunction()" id="toTop" style="display: block;"></div>
+              </div>
+            </footer>
+            <div class="copyright copy">Copyright 2023-2024© <a href="">WBDV211</a>
+              <br>All Rights Reserved</br>
+            </div>
+            <br></br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
